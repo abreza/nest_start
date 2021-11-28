@@ -1,0 +1,10 @@
+db.createUser({
+  user: 'mongouser',
+  pwd: 'mysecretpassword',
+  roles: [
+    {
+      role: 'readWrite',
+      db: 'my_database',
+    },
+  ],
+});
